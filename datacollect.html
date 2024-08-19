@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Consumption Tracker</title>
+    <link rel="stylesheet" href="datastyle.css">
+</head>
+<body>
+    <header>
+        <h1><u>Water Usage Analysis: Track and Compare</u></h1>
+        <h2>Kindly enter the measurement of water(in Litres) by you per day</h2>
+    </header>
+    <main>
+        <section class="consumption-form-container">
+            <form id="consumptionForm">
+                <label for="day1">Day 1:</label>
+                <input type="number" id="day1" name="day1" aria-label="Day 1 water consumption">
+                <br>
+                <label for="day2">Day 2:</label>
+                <input type="number" id="day2" name="day2" aria-label="Day 2 water consumption">
+                <br>
+                <label for="day3">Day 3:</label>
+                <input type="number" id="day3" name="day3" aria-label="Day 3 water consumption">
+                <br>
+                <label for="day4">Day 4:</label>
+                <input type="number" id="day4" name="day4" aria-label="Day 4 water consumption">
+                <br>
+                <label for="day5">Day 5:</label>
+                <input type="number" id="day5" name="day5" aria-label="Day 5 water consumption">
+                <br>
+                <label for="day6">Day 6:</label>
+                <input type="number" id="day6" name="day6" aria-label="Day 6 water consumption">
+                <br>
+                <label for="day7">Day 7:</label>
+                <input type="number" id="day7" name="day7" aria-label="Day 7 water consumption">
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section class="graph-container">
+            <canvas id="consumptionChart"></canvas>
+        </section>
+        <section class="conservation-measures-container">
+            <div id="conservationMeasures"></div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="datascript.js"></script>
+</body>
+</html>

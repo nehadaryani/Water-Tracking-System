@@ -1,0 +1,122 @@
+body, h1, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and font style for the entire page */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: lightblue;
+    color: #333;
+   /* background-image: url('register\ image.jpg');*/
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* Style the header */
+header {
+    /*background: #4a90e2;*/
+    color: red;
+    padding: 20px;
+    text-align: center;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+/* Style the main container */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style the form container */
+.consumption-form-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid skyblue;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: blue;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #357ab8;
+}
+
+/* Style the graph container */
+.graph-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+#consumptionChart {
+    width: 100%;
+    height: 400px;
+}
+
+/* Style the conservation measures container */
+.conservation-measures-container {
+    /*background: #fff;*/
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+/* Add some responsive styles */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .consumption-form-container, .graph-container, .conservation-measures-container {
+        width: 100%;
+    }
+}
